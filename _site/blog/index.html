@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Thoughts on data analytics, machine learning, and career insights.">
+<meta name="author" content="Jen (Ha) Nguyen">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Blog">
+<meta property="og:description" content="Thoughts on data analytics, machine learning, and career insights.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://localhost:4001/blog/">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Blog">
+
+<title>Blog · Jen (Ha) Nguyen</title>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+
+<!-- Icons (Lucide via CDN) -->
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+<!-- Styles -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+</head>
+<body>
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+  <a href="/" class="nav__logo">
+    Jennifer<span>.</span>
+  </a>
+
+  <ul class="nav__links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/resume/">Resume</a></li>
+    <!-- <li><a href="/projects/">Projects</a></li> -->
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/awards/">Awards</a></li>
+    <li><a href="/contact/" class="nav__cta">Contact</a></li>
+  </ul>
+
+  <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile overlay -->
+<div class="nav__mobile-menu" role="dialog" aria-label="Mobile navigation">
+  <button class="nav__mobile-close" aria-label="Close menu">✕</button>
+  <a href="/">Home</a>
+  <a href="/resume/">Resume</a>
+  <!-- <a href="/projects/">Projects</a> -->
+  <a href="/blog/">Blog</a>
+  <a href="/awards/">Awards</a>
+  <a href="/contact/">Contact</a>
+</div>
+
+
+  <main>
+    <header class="page-hero">
+  <div class="container">
+    <p class="eyebrow" style="font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-light);margin-bottom:.75rem;">Writing</p>
+    <h1>Blog</h1>
+    <p>I write about data analytics, machine learning, tooling, and lessons learned from the field.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+
+    <!-- Filter tabs -->
+    <div class="filter-tabs" data-target="#posts-grid">
+      <button class="filter-tab active" data-filter="all">All Posts</button>
+      <button class="filter-tab" data-filter="analytics">Analytics</button>
+      <button class="filter-tab" data-filter="ml">Machine Learning</button>
+      <button class="filter-tab" data-filter="career">Career</button>
+      <button class="filter-tab" data-filter="tools">Tools</button>
+    </div>
+
+    <div class="blog-grid" id="posts-grid">
+      
+      <a class="blog-card fade-up" href="/blog/2025/11/10/sql-window-functions/" data-category="analytics">
+        <div class="blog-card__banner" style="background: linear-gradient(135deg, #1e1e28, #1a1a3e);">
+          🪟
+        </div>
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            Nov 10, 2025
+             · 8 min read
+             · <span class="tag tag--accent" style="font-size:.7rem;padding:.15rem .5rem;">analytics</span>
+          </div>
+          <h3 class="blog-card__title">SQL Window Functions Every Data Analyst Should Master</h3>
+          <p class="blog-card__excerpt">Window functions are the single biggest leap in SQL productivity. Here's a practical guide with real-world examples from my wor...</p>
+          <div class="blog-card__footer">
+            <div style="display:flex;gap:.4rem;flex-wrap:wrap;">
+              
+              <span class="tag tag--muted">SQL</span>
+              
+              <span class="tag tag--muted">Analytics</span>
+              
+              <span class="tag tag--muted">Data Engineering</span>
+              
+            </div>
+            <span class="blog-card__read">Read →</span>
+          </div>
+        </div>
+      </a>
+      
+      <a class="blog-card fade-up" href="/blog/2025/10/05/churn-prediction-guide/" data-category="ml">
+        <div class="blog-card__banner" style="background: linear-gradient(135deg, #1a1028, #1e1e38);">
+          🔮
+        </div>
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            Oct 05, 2025
+             · 12 min read
+             · <span class="tag tag--accent" style="font-size:.7rem;padding:.15rem .5rem;">ml</span>
+          </div>
+          <h3 class="blog-card__title">Building a Production Churn Prediction Model: End-to-End</h3>
+          <p class="blog-card__excerpt">A walkthrough of how I built and deployed a merchant churn model at Shopify—from feature engineering through to real-time Airfl...</p>
+          <div class="blog-card__footer">
+            <div style="display:flex;gap:.4rem;flex-wrap:wrap;">
+              
+              <span class="tag tag--muted">Machine Learning</span>
+              
+              <span class="tag tag--muted">Python</span>
+              
+              <span class="tag tag--muted">XGBoost</span>
+              
+            </div>
+            <span class="blog-card__read">Read →</span>
+          </div>
+        </div>
+      </a>
+      
+      <a class="blog-card fade-up" href="/blog/2025/09/18/ab-testing-mistakes/" data-category="analytics">
+        <div class="blog-card__banner" style="background: linear-gradient(135deg, #1a2818, #1e2e1e);">
+          🧪
+        </div>
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            Sep 18, 2025
+             · 7 min read
+             · <span class="tag tag--accent" style="font-size:.7rem;padding:.15rem .5rem;">analytics</span>
+          </div>
+          <h3 class="blog-card__title">7 A/B Testing Mistakes That Kill Your Experiments</h3>
+          <p class="blog-card__excerpt">After running hundreds of experiments at Shopify, I've seen the same mistakes sink otherwise promising A/B tests. Here's how to...</p>
+          <div class="blog-card__footer">
+            <div style="display:flex;gap:.4rem;flex-wrap:wrap;">
+              
+              <span class="tag tag--muted">A/B Testing</span>
+              
+              <span class="tag tag--muted">Statistics</span>
+              
+              <span class="tag tag--muted">Analytics</span>
+              
+            </div>
+            <span class="blog-card__read">Read →</span>
+          </div>
+        </div>
+      </a>
+      
+      <a class="blog-card fade-up" href="/blog/2025/08/22/career-advice-data-analyst/" data-category="career">
+        <div class="blog-card__banner" style="background: linear-gradient(135deg, #281a10, #3e2a1e);">
+          🚀
+        </div>
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            Aug 22, 2025
+             · 6 min read
+             · <span class="tag tag--accent" style="font-size:.7rem;padding:.15rem .5rem;">career</span>
+          </div>
+          <h3 class="blog-card__title">How I Went From Intern to Senior Data Analyst in 5 Years</h3>
+          <p class="blog-card__excerpt">The honest story of my journey from Capital One intern to Senior Analyst at Stripe—including the mistakes, the pivots, and what...</p>
+          <div class="blog-card__footer">
+            <div style="display:flex;gap:.4rem;flex-wrap:wrap;">
+              
+              <span class="tag tag--muted">Career</span>
+              
+              <span class="tag tag--muted">Data Analytics</span>
+              
+              <span class="tag tag--muted">Growth</span>
+              
+            </div>
+            <span class="blog-card__read">Read →</span>
+          </div>
+        </div>
+      </a>
+      
+    </div>
+
+    
+
+  </div>
+</section>
+
+  </main>
+
+  <footer class="footer">
+  <div class="footer__socials">
+    <a href="https://linkedin.com/in/ha-nguyen" class="footer__social" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+    </a>
+    <a href="https://github.com/jennifer1907" class="footer__social" target="_blank" rel="noopener" aria-label="GitHub">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+    </a>
+    <a href="https://kaggle.com/jenniferh" class="footer__social" target="_blank" rel="noopener" aria-label="Kaggle">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.825 23.859c-.022.092-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.117.352-.351.352H5.505c-.236 0-.354-.117-.354-.352V.353c0-.233.118-.353.354-.353h2.431c.234 0 .351.12.351.353v14.343l6.203-6.272c.165-.165.33-.246.495-.246h3.239c.144 0 .236.06.285.18.046.149.034.255-.036.315l-6.555 6.344 6.836 8.507c.095.104.117.208.07.333z"/></svg>
+    </a>
+    <a href="mailto:hanguyen.aiovn@gmail.com" class="footer__social" aria-label="Email">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    </a>
+  </div>
+
+  <ul class="footer__links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/resume/">Resume</a></li>
+    <li><a href="/projects/">Projects</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/awards/">Awards</a></li>
+  </ul>
+
+  <p class="footer__copy">
+    © 2026 Jen (Ha) Nguyen · Built with Jekyll &amp; ♥
+  </p>
+</footer>
+
+
+  <script src="/assets/js/main.js"></script>
+  <script>if (window.lucide) lucide.createIcons();</script>
+</body>
+</html>
